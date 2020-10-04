@@ -12,7 +12,7 @@ pip install tolha
 from decouple import config
 from tolha.myais import get_recent_call_history
 
-call_usage = get_recent_call_history(config("PHONE_NUMBER"), config("PASSWORD"), config("NATIONAL_ID_CARD"))
+call_usage = get_recent_call_history(config("PHONE_NUMBER"), config("PASSWORD"), config("NATIONAL_ID"))
 print(call_usage)
 ```
 
