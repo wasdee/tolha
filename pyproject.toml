@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tolha"
+version = "0.1.0"
+description = "Unofficial Library to access your my ais data"
+authors = ["Nutchanon Ninyawee <nutchanon@codustry.com>"]
+license = "ISC"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+playwright = "^0.142.3"
+python-decouple = "^3.3"
+loguru = "^0.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
