@@ -16,6 +16,9 @@ call_usage = get_recent_call_history(config("PHONE_NUMBER"), config("PASSWORD"),
 print(call_usage)
 ```
 
+### NOTES
+This code won't run on jupyter until https://github.com/microsoft/playwright-python/issues/178 is fixed.
+
 ## Dev
 
 ### Roadmap
