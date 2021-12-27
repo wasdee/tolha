@@ -1,7 +1,7 @@
 # Tolha - โทรหา
-
-> เข้าถึงประวัติการโทรของตัวเองง่ายๆ จากค่ายมือถือของคุณ
+เข้าถึงประวัติการโทรของตัวเองง่ายๆ จากค่ายมือถือของคุณ
 > ช่วยคุณนับความคิดถึงใครซักคนแบบ programmable
+
 
 ## Highlight and Feature
 1. fully-type, with `pydantic`
@@ -31,7 +31,10 @@ print(call_usages['ธันวาคม 2564'][0])
 ## Dev
 
 ### This is a movement.
-<a href="https://imgflip.com/i/5z7hhh"><img src="https://i.imgflip.com/5z7hhh.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+<a href="https://imgflip.com/i/5z7hhh"><img src="https://i.imgflip.com/5z7hhh.jpg" title="made at imgflip.com"/></a><div>
+
+Feel free to join and enlighten yourself, make your life a bit more programmable.
+
 ### Roadmap
 1. add other metric
 2. make cli
