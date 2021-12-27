@@ -16,7 +16,7 @@ pip install tolha
 ```python
 from tolha.myais import get_all_call_history
 
-# type down, 
+# type down, myais credential
 invoices, call_usages = get_all_call_history(phone_number_or_username='0995555555', password='password1234', national_id='1515566254125')
 
 print(invoices[0])
