@@ -1,10 +1,10 @@
 from decouple import config
-from tolha.myais import get_recent_call_history
+from tolha.myais import get_all_call_history
 
-def test_get_recent_call_history():
-    call_usage = get_recent_call_history(config("PHONE_NUMBER"), config("PASSWORD"), config("NATIONAL_ID_CARD"))
-    import pickle
-    with open("data.pkl", mode="wb") as f:
-        pickle.dump(call_usage, f)
-    print(call_usage)
-    assert call_usage
+
+
+def test_get_all_call_history():
+    invoices, call_usages = get_all_call_history(config("PHONE_NUMBER"), config("PASSWORD"), config("NATIONAL_ID"))
+
+    assert isinstance(invoices, list)
+    assert isinstance(call_usages, dict)
