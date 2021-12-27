@@ -3,3 +3,6 @@ postpip.playwright:
 
 docs:
 	pdoc tolha
+
+publish:
+	poetry publish --build
