@@ -1,31 +1,38 @@
 # Tolha - โทรหา
 
-> เข้าถึงประวัติการโทรของตัวเองง่ายๆ
+> เข้าถึงประวัติการโทรของตัวเองง่ายๆ จากค่ายมือถือของคุณ
+
+## Highlight and Feature
+1. fully-type, with `pydantic`
+2. no docs, since api is so simple #hackerStyle
+3. Support Python 3.10.1+ #hackerStyle
 
 ## Get Started
 ```bash
-# support python 3.8+
+# support python 3.10+
 pip install tolha
 ```
 
 ```python
-from decouple import config
-from tolha.myais import get_recent_call_history
+from tolha.myais import get_all_call_history
 
-call_usage = get_recent_call_history(config("PHONE_NUMBER"), config("PASSWORD"), config("NATIONAL_ID"))
-print(call_usage)
+invoices, call_usages = get_all_call_history('0995555555', 'password1234', '1515566254125')
+
+print(invoices[0])
+# Invoice(invoice_number='W-IN-16-6412-xxxxxx', is_required_sr=False, period_description='ค่าใช้บริการวันที่ 24/11/2021 - 23/12/2021 (Due Date 15/01/2022)', period_from='24/11/2021', period_to='23/12/2021', payment_due_date='15/01/2022', total_balance='405.75', outstanding_balance='0.00', is_payable=False, event_seq='211224000', billing_system='NONBOS', bill_cycle='ธันวาคม 2564', remark='สามารถดูใบแจ้งค่าใช้บริการได้วันที่ 30 ธ.ค. 2564')
+
+
+print(call_usages['ธันวาคม 2564'][0])
+# Call(datetime=datetime.datetime(2021, 11, 24, 9, 43), destination_phoneNumber='08xxxxxxxx', destination_network='AIS', origin='Udon Thani', destination='AIS', addons='', duration=datetime.timedelta(seconds=60), calculated_cost=1.5, actual_cost=0.0, note='')
 ```
-
-### NOTES
-This code won't run on jupyter until https://github.com/microsoft/playwright-python/issues/178 is fixed.
 
 ## Dev
 
 ### Roadmap
-1. output as pandas DataFrame
-2. able to select other month
-3. make cli
-4. add other telco
+1. add other metric
+2. make cli
+3. add other telco
+4. add async
 
-### Tools
+### Tools for CSS Selector
 use <https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb>
