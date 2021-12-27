@@ -34,6 +34,7 @@ print(call_usages['ธันวาคม 2564'][0])
 <a href="https://imgflip.com/i/5z7hhh"><img src="https://i.imgflip.com/5z7hhh.jpg" title="made at imgflip.com"/></a><div>
 
 Feel free to join and enlighten yourself, make your life a bit more programmable.
+See <https://dogsheep.github.io/> or [Medium - “มหาสติ Digital” การมีความตระหนักรู้ทุก Bits & Bytes](https://circleoncircles.medium.com/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%B4-digital-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%95%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%97%E0%B8%B8%E0%B8%81-bits-bytes-549001e8d55d)
 
 ### Roadmap
 1. add other metric
