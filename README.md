@@ -16,7 +16,8 @@ pip install tolha
 ```python
 from tolha.myais import get_all_call_history
 
-invoices, call_usages = get_all_call_history('0995555555', 'password1234', '1515566254125')
+# type down, 
+invoices, call_usages = get_all_call_history(phone_number_or_username='0995555555', password='password1234', national_id='1515566254125')
 
 print(invoices[0])
 # Invoice(invoice_number='W-IN-16-6412-xxxxxx', is_required_sr=False, period_description='ค่าใช้บริการวันที่ 24/11/2021 - 23/12/2021 (Due Date 15/01/2022)', period_from='24/11/2021', period_to='23/12/2021', payment_due_date='15/01/2022', total_balance='405.75', outstanding_balance='0.00', is_payable=False, event_seq='211224000', billing_system='NONBOS', bill_cycle='ธันวาคม 2564', remark='สามารถดูใบแจ้งค่าใช้บริการได้วันที่ 30 ธ.ค. 2564')
