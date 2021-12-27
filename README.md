@@ -40,6 +40,7 @@ Feel free to join and enlighten yourself, make your life a bit more programmable
 2. make cli
 3. add other telco
 4. add async
+5. add other non telco - read facebook messenger dump/ google duo dump
 
 ### Tools for CSS Selector
 use <https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb>
